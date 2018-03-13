@@ -16,12 +16,7 @@ var coin = {
     toHTML: function() {
         var img = document.createElement("img");
         // set the properties of the image element to show either heads or tails
-        if (this.toString() === "H") { //heads picture
-            img.classList.add('coin', 'heads')
-        }
-        else if (this.toString() === "T") { //tails picture
-            img.classList.add('coin', 'tails')
-        }
+        img.classList.add('coin', this.toString());
         return img;
     }
 };
